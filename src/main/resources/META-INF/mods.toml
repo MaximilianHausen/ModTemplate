@@ -1,4 +1,4 @@
-# Based on https://github.com/neoforged/MDK/blob/main/src/main/resources/META-INF/mods.toml, look there for comments/documentation
+# Based on https://github.com/MinecraftForge/MinecraftForge/blob/1.20.1/mdk/src/main/resources/META-INF/mods.toml, look there for additional comments/documentation
 
 modLoader = "javafml"
 loaderVersion = "${loader_version_range}"
