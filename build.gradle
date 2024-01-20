@@ -89,9 +89,8 @@ dependencies {
 }
 
 mixin {
-    config 'mixins.examplemod.json'
+    config 'examplemod.mixins.json'
 
-    // Refmaps for each SourceSet
     add sourceSets.main, 'examplemod.refmap.json'
 
     // Options for the Annotation Processor
