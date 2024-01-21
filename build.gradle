@@ -89,9 +89,9 @@ dependencies {
 }
 
 mixin {
-    config 'examplemod.mixins.json'
+    config "${mod_id}.mixins.json"
 
-    add sourceSets.main, 'examplemod.refmap.json'
+    add sourceSets.main, "${mod_id}.refmap.json"
 
     // Options for the Annotation Processor
     quiet
@@ -107,7 +107,7 @@ tasks.withType(ProcessResources).configureEach {
     ]
     inputs.properties replaceProperties
 
-    filesMatching(['META-INF/mods.toml', 'pack.mcmeta']) {
+    filesMatching(['META-INF/mods.toml', '*.mixins.json', 'pack.mcmeta']) {
         expand replaceProperties + [project: project]
     }
 }
